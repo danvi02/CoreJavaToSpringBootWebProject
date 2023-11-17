@@ -1,4 +1,4 @@
-package com.user.registration.system;
+package com.test;
 
 import static org.junit.Assert.assertTrue;
 
