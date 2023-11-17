@@ -1,6 +1,17 @@
 # If you are on main branch, please select appropriate branch to see the appropriate coding logic of
-- **4 Different Coding Logic which will begin from Core Java**
-Core Java -> Spring Core -> Spring Web -> Spring Boot Web
+- **Different Coding Logic which will begin from Core Java**
+  - Core Java -> Spring Core -> Spring Web -> Spring Boot Web
+
+## Dispatcher Servlet
+   - The "DispatcherServlet" is a central component in the Spring Framework's web module that handles the HTTP requests and manages the processing of these requests in a Spring-based web application. It acts as a front controller, responsible for dispatching requests to the appropriate handlers (controllers) and coordinating the processing of the request and response.
+
+## Configure Tomcat server
+   - You need to configure tomcat server in IDE , give the path where your tomcat is located in your local machine. You can add the tomcat server by clicking on to menu Windows-> Others -> Type `servers` then a new tab will be generated in after the console tab in below then you can right-click and add your tomcat server.
+
+## Run your application on Tomcat server by starting the server
+- **test URL of the application after you add your application to TOMCAT server and run :**
+  - http://localhost:8080/corejavatospringbootweb/test (since it is java spring web application maven project, it 	takes artifactId as URL context path).
+  - And also if you want to add your application to tomcat server then in pom.xml, you must mention <packaging> as 	war
 
 ## Spring Annotations
 
