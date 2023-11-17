@@ -3,45 +3,37 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
-  <groupId>com.test</groupId>
-  <artifactId>corejavatospringbootweb</artifactId>
-  <version>1.0-SNAPSHOT</version>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.1.2</version>
+    </parent>
+    <groupId>com.test</groupId>
+    <artifactId>corejavatospringbootweb</artifactId>
+    <version>1.0-SNAPSHOT</version>
   
-  <packaging>war</packaging>
+    <packaging>war</packaging>
 
-  <properties>
+    <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
-  </properties>
+    </properties>
 
-  <dependencies>
-	<dependency>
-		<groupId>org.springframework</groupId>
-		<artifactId>spring-context</artifactId>
-		<version>6.0.13</version>
-	</dependency>
-	<dependency>
-		<groupId>org.springframework</groupId>
-		<artifactId>spring-webmvc</artifactId>
-		<version>6.0.13</version>
-	</dependency>
-	<dependency>
-		<groupId>jakarta.platform</groupId>
-		<artifactId>jakarta.jakartaee-api</artifactId>
-		<version>10.0.0</version>
-		<scope>provided</scope>
-	</dependency>
+    <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-  </dependencies>
+    </dependencies>
 
-  <build>
+    <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
@@ -85,5 +77,5 @@
         </plugin>
       </plugins>
     </pluginManagement>
-  </build>
+    </build>
 </project>
